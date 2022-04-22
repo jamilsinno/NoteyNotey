@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is an app to display your previously saved notes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Notey Notey</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	</head>
+	<header>
+		<h1>Welcome to the NoteyNotey app!</h1>
+	</header>
+	<body>
+		<form action="">
+			<div>
+				<label for="date">Choose the date:</label>
+				<input type="date" name="date">
+			</div>
+			<div>
+				<label for="text">Enter your note:</label>
+				<textarea name="text" id="" rows="10"></textarea>
+			</div>
+		</form>
+
+		<button class="button">Submit</button>
+
+		<section class="tableContainer">
+			<table>
+				<caption>Your previous notes</caption>
+				<tr>
+					<th>Date</th>
+					<th>Note</th>
+				</tr>
+			</table>
+		</section>
+
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
