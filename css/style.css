@@ -17,12 +17,32 @@
 	clear: both;
 }
 
+html{
+     font-size: 62.5%;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-     font-size: 62.5%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.flexCol{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.flexRow{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
 }
 
 
@@ -30,6 +50,51 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
+     width: 100%;
+     justify-content: center;
+}
+
+header > h1{
+     width: auto;
+     /* border: 5px solid gold; */
+     justify-content: space-around;
+     text-align: center;
+     font-size: 4rem;
+     padding: 0.8em 0;
+}
+
+.mainContainer{
+     width: 100%;
+}
+.mainContainer > h2{
+     padding: 0.5em 0;
+     font-size: 2rem;
+}
+
+.mainContainer > form > div{
+     padding-bottom: 0.5em;
+}
+
+.mainContainer > section{
+     padding-bottom: 0.5em;
+}
+
+.textContainer > textarea{
+     width: 75vw;
+     margin: auto;
+}
+
+.button{
+     margin: 0.3em;
+     border-radius: 5px;
+}
+.tableContainer{
+     width: 100%;
+}
+
+.tableHeader{
+     width: 50%;
+     justify-content: space-around;
 
 }
 

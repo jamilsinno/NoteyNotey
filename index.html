@@ -11,33 +11,40 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+		<link rel="stylesheet" href="css/reset.css">
 	</head>
-	<header>
-		<h1>Welcome to the NoteyNotey app!</h1>
-	</header>
+	
 	<body>
-		<form action="">
-			<div>
-				<label for="date">Choose the date:</label>
-				<input type="date" name="date">
-			</div>
-			<div>
-				<label for="text">Enter your note:</label>
-				<textarea name="text" id="" rows="10"></textarea>
-			</div>
-		</form>
+		<header class="flexRow">
+			<h1>Welcome to the NoteyNotey app!</h1>
+		</header>
+		<section class="mainContainer flexCol">
+			<h2>Select the date and enter your note</h2>
+			<section>
 
-		<button class="button">Submit</button>
+				<form action="">
+					<label for="date">Choose the date:</label>
+					<input type="date" name="date">
+				</form>
+			</section>
+			<form class="textContainer flexRow">
+				<textarea name="text" id="" rows="10" placeholder="Enter your note"></textarea>
+			</form>
 
-		<section class="tableContainer">
-			<table>
-				<caption>Your previous notes</caption>
-				<tr>
-					<th>Date</th>
-					<th>Note</th>
-				</tr>
-			</table>
+		</section class='buttonContainer'>
+			<button class="button">Submit</button>
+		<section>
+
+		</section>
+
+		<section class="tableContainer flexCol">
+			<h3>Your notes:</h3>
+
+			<div class="tableHeader flexRow">
+				<h4>Date</h4>
+				<h4>Note</h4>
+
+			</div>
 		</section>
 
 
